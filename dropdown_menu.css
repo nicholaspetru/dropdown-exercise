@@ -1,0 +1,38 @@
+html, body {
+  padding: 0;
+  margin: 0;
+}
+html #dropdown_container, body #dropdown_container {
+  position: relative;
+  display: inline-block;
+}
+html #dropdown_container .submenu_container, body #dropdown_container .submenu_container {
+  display: none;
+}
+html #dropdown_container .item_block, body #dropdown_container .item_block {
+  background-color: pink;
+}
+html #dropdown_container .item_block p, body #dropdown_container .item_block p {
+  width: 200px;
+  padding: 26px;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0;
+}
+html #dropdown_container .item_block:hover > p, html #dropdown_container .item_block:hover > .submenu_container, body #dropdown_container .item_block:hover > p, body #dropdown_container .item_block:hover > .submenu_container {
+  display: inline-block;
+}
+html #dropdown_container .item_block:not(:last-child), body #dropdown_container .item_block:not(:last-child) {
+  border-bottom: 1px solid black;
+}
+html #dropdown_container .item_block .submenu_container, body #dropdown_container .item_block .submenu_container {
+  position: absolute;
+}
+html #dropdown_container .item_block .submenu_container .item_block, body #dropdown_container .item_block .submenu_container .item_block {
+  background-color: violet;
+}
+html #dropdown_container .item_block .submenu_container .item_block .submenu_container .item_block, body #dropdown_container .item_block .submenu_container .item_block .submenu_container .item_block {
+  background-color: lightgreen;
+}
+
+/*# sourceMappingURL=dropdown_menu.css.map */
